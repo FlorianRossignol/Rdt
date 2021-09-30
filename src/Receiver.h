@@ -15,4 +15,5 @@ public:
 
 protected:
     Channel& channel_;
+    float rtt_ = 0.0f;
 };

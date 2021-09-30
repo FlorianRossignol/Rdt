@@ -66,7 +66,7 @@ TEST(timeout, timeout_interval2)
     const auto srtt = channel.GetSender().GetSrtt();
     const auto rto = channel.GetSender().GetRto();
 
-    EXPECT_NEAR(srtt, 2.0f, 0.2f);
+    EXPECT_NEAR(srtt, 2.0f, 0.3f);
     EXPECT_GT(rto, avgDelay + margin);
     //rfc6298 2.4
     EXPECT_GE(rto, 1.0f);
