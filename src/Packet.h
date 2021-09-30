@@ -12,5 +12,5 @@ struct Packet
     byte checksum = 0;
     byte sequenceNmb = 0;
     std::array<byte, packetSize> data{};
-
+    
 };
